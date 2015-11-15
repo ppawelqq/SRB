@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-11-07 15:30:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pl.pjaneczek.srb.model.Seans" table="seans" catalog="pjaneczek_cinema" optimistic-lock="version">
+        <id name="seansId" type="int">
+            <column name="seans_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="personId" type="java.lang.Integer">
+            <column name="person_id" />
+        </property>
+        <property name="movieName" type="string">
+            <column name="movie_name" length="65535" />
+        </property>
+        <property name="data" type="date">
+            <column name="data" length="10" />
+        </property>
+        <property name="czas" type="string">
+            <column name="czas" length="20" />
+        </property>
+        <property name="nrSali" type="java.lang.Integer">
+            <column name="nr_sali" />
+        </property>
+        <property name="nrMiejsca" type="java.lang.Integer">
+            <column name="nr_miejsca" />
+        </property>
+        <property name="idMiejsca" type="java.lang.Integer">
+            <column name="id_miejsca" />
+        </property>
+    </class>
+</hibernate-mapping>

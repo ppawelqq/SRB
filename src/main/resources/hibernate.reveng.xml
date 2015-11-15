@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="pjaneczek_cinema"/>
+  <table-filter match-name="person"/>
+  <table-filter match-name="seans"/>
+  <table-filter match-name="movie"/>
+  <table-filter match-name="sala"/>
+  <table-filter match-name="miejsce"/>
+  <table-filter match-name="time"/>
+  <table-filter match-name="user_roles"/>
+  <table-filter match-name="users"/>
+  <table-filter match-name="data"/>
+  <table-filter match-name="movietype"/>
+  <table-filter match-name="rzad"/>
+</hibernate-reverse-engineering>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/pjaneczek_cinema?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="pl/pjaneczek/srb/model/Miejsce.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Data.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Rzad.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Sala.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Users.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Person.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Seans.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Movie.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/UserRoles.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Movietype.hbm.xml"/>
+    <mapping resource="pl/pjaneczek/srb/model/Time.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

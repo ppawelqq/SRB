@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-11-07 15:30:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pl.pjaneczek.srb.model.Movietype" table="movietype" catalog="pjaneczek_cinema" optimistic-lock="version">
+        <id name="movietypeId" type="int">
+            <column name="movietype_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="movietypeLabel" type="string">
+            <column name="movietype_label" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

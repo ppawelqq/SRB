@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-11-07 15:30:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pl.pjaneczek.srb.model.Time" table="time" catalog="pjaneczek_cinema" optimistic-lock="version">
+        <id name="timeId" type="int">
+            <column name="time_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="time" type="string">
+            <column name="time" length="20" />
+        </property>
+        <property name="movieId" type="java.lang.Integer">
+            <column name="movie_id" />
+        </property>
+    </class>
+</hibernate-mapping>
